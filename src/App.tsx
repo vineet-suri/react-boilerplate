@@ -8,7 +8,7 @@ function App() {
       <Route path="/" element={<HomePage />} />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
-  )
+  );
 }
 
-export default App
+export default App;
