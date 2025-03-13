@@ -1,54 +1,85 @@
-# React + TypeScript + Vite
+React + TypeScript + Vite Boilerplate
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository provides a well-structured React + TypeScript boilerplate using Vite, with pre-configured ESLint, Prettier, and essential libraries for building scalable applications.
 
-Currently, two official plugins are available:
+⸻
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features
+	•	Fast Build Times – Optimized with Vite
+	•	TypeScript Support – Ensures type safety
+	•	ESLint & Prettier – Code linting and formatting
+	•	React Router – Pre-configured for client-side routing
+	•	State Management Ready – Can integrate with Zustand, Redux Toolkit, or Context API
+	•	SCSS / TailwindCSS Support – Flexible styling options
 
-## Expanding the ESLint configuration
+⸻
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Folder Structure
+📦 my-react-app
+├── 📂 public                # Static assets
+│   ├── index.html
+│   ├── favicon.ico
+├── 📂 src                   # Main source code
+│   ├── 📂 assets            # Images, fonts, and other assets
+│   ├── 📂 components        # Reusable UI components
+│   ├── 📂 hooks             # Custom React hooks
+│   ├── 📂 layouts           # Layout components (Header, Footer, etc.)
+│   ├── 📂 pages             # Page-level components (e.g., Home, About)
+│   ├── 📂 services          # API calls and services (Axios setup)
+│   ├── 📂 store             # Redux Toolkit / Zustand store (if needed)
+│   ├── 📂 styles            # Global styles
+│   ├── 📂 utils             # Utility functions
+│   ├── App.tsx             # Main App component
+│   ├── main.tsx            # Entry point
+│   ├── routes.tsx          # Route definitions
+│   ├── index.css           # Global styles
+│   └── vite-env.d.ts       # Vite environment types
+├── 📂 tests                 # Unit & integration tests
+├── .eslintrc.cjs            # ESLint configuration
+├── .prettierrc              # Prettier configuration
+├── .gitignore               # Git ignore file
+├── package.json             # Dependencies & scripts
+├── tsconfig.json            # TypeScript configuration
+├── README.md                # Documentation
+└── vite.config.ts           # Vite configuration
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Getting Started
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1. Install Dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Ensure Node.js is installed, then run:
+npm install
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+2. Start Development Server
+
+To start the development server, run:
+npm run dev
+The application will be available at http://localhost:5173/.
+
+
+3. Build for Production
+
+To generate an optimized build, run:
+npm run build
+
+4. Run ESLint
+
+To check for linting issues:
+npm run lint
+
+Configuration
+	•	ESLint settings are in eslint.config.js
+	•	Prettier settings are in .prettierrc
+	•	Environment variables should be placed in a .env file
+
+Styling Options
+
+The project is compatible with SCSS, TailwindCSS, and Styled Components. Default styles are located in src/styles/.
+
+VS Code Extensions
+
+For better development experience, install:
+	1.	ESLint – For linting TypeScript and JavaScript.
+	2.	Prettier - Code formatter – For consistent code formatting.
+	3.	Tailwind CSS IntelliSense (if using TailwindCSS).
+  
