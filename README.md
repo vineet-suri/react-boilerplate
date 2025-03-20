@@ -1,20 +1,23 @@
-React + TypeScript + Vite Boilerplate
+# React + TypeScript + Vite Boilerplate
 
 This repository provides a well-structured React + TypeScript boilerplate using Vite, with pre-configured ESLint, Prettier, and essential libraries for building scalable applications.
 
-⸻
+---
 
-Features
-	•	Fast Build Times – Optimized with Vite
-	•	TypeScript Support – Ensures type safety
-	•	ESLint & Prettier – Code linting and formatting
-	•	React Router – Pre-configured for client-side routing
-	•	State Management Ready – Can integrate with Zustand, Redux Toolkit, or Context API
-	•	SCSS / TailwindCSS Support – Flexible styling options
+## Features
 
-⸻
+- **Fast Build Times** – Optimized with Vite
+- **TypeScript Support** – Ensures type safety
+- **ESLint & Prettier** – Code linting and formatting
+- **React Router** – Pre-configured for client-side routing
+- **State Management Ready** – Can integrate with Zustand, Redux Toolkit, or Context API
+- **SCSS / TailwindCSS Support** – Flexible styling options
 
-Folder Structure
+---
+
+## Folder Structure
+
+```
 📦 my-react-app
 ├── 📂 public                # Static assets
 │   ├── index.html
@@ -42,44 +45,58 @@ Folder Structure
 ├── tsconfig.json            # TypeScript configuration
 ├── README.md                # Documentation
 └── vite.config.ts           # Vite configuration
+```
 
-Getting Started
+## Getting Started
 
-1. Install Dependencies
+### 1. Install Dependencies
 
 Ensure Node.js is installed, then run:
-npm install
 
-2. Start Development Server
+```sh
+npm install
+```
+
+### 2. Start Development Server
 
 To start the development server, run:
+
+```sh
 npm run dev
-The application will be available at http://localhost:5173/.
+```
 
+The application will be available at [http://localhost:5173/](http://localhost:5173/).
 
-3. Build for Production
+### 3. Build for Production
 
 To generate an optimized build, run:
-npm run build
 
-4. Run ESLint
+```sh
+npm run build
+```
+
+### 4. Run ESLint
 
 To check for linting issues:
+
+```sh
 npm run lint
+```
 
-Configuration
-	•	ESLint settings are in eslint.config.js
-	•	Prettier settings are in .prettierrc
-	•	Environment variables should be placed in a .env file
+## Configuration
 
-Styling Options
+- **ESLint settings** are in `eslint.config.js`
+- **Prettier settings** are in `.prettierrc`
+- **Environment variables** should be placed in a `.env` file
 
-The project is compatible with SCSS, TailwindCSS, and Styled Components. Default styles are located in src/styles/.
+## Styling Options
 
-VS Code Extensions
+The project is compatible with SCSS, TailwindCSS, and Styled Components. Default styles are located in `src/styles/`.
+
+## VS Code Extensions
 
 For better development experience, install:
-	1.	ESLint – For linting TypeScript and JavaScript.
-	2.	Prettier - Code formatter – For consistent code formatting.
-	3.	Tailwind CSS IntelliSense (if using TailwindCSS).
-  
+
+1. **ESLint** – For linting TypeScript and JavaScript.
+2. **Prettier - Code formatter** – For consistent code formatting.
+3. **Tailwind CSS IntelliSense** (if using TailwindCSS).
